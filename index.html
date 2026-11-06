@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubiyan Hypermarket Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RUBIYAN HYPERMARKET</h1>
+        <p>Billing &amp; Point of Sale System</p>
+        <p class="project-credit-header">
+            Minor Project - Last Internship | Done by Hana Fathima Haris | Reg No: 03SU25RD017
+        </p>
+    </header>
+    <main class="container">
+        <section class="panel products-panel">
+            <h2>🛒 Products</h2>
+            <div id="products">
+                <div class="product" data-id="1" data-name="Rice (1 kg)" data-price="60"><div class="product-info"><strong>Rice (1 kg)</strong><span class="product-price">₹60.00</span></div><button type="button" class="add-button">Add</button></div>
+                <div class="product" data-id="2" data-name="Milk (1 L)" data-price="30"><div class="product-info"><strong>Milk (1 L)</strong><span class="product-price">₹30.00</span></div><button type="button" class="add-button">Add</button></div>
+                <div class="product" data-id="3" data-name="Bread" data-price="40"><div class="product-info"><strong>Bread</strong><span class="product-price">₹40.00</span></div><button type="button" class="add-button">Add</button></div>
+                <div class="product" data-id="4" data-name="Sugar (1 kg)" data-price="45"><div class="product-info"><strong>Sugar (1 kg)</strong><span class="product-price">₹45.00</span></div><button type="button" class="add-button">Add</button></div>
+                <div class="product" data-id="5" data-name="Cooking Oil (1 L)" data-price="140"><div class="product-info"><strong>Cooking Oil (1 L)</strong><span class="product-price">₹140.00</span></div><button type="button" class="add-button">Add</button></div>
+                <div class="product" data-id="6" data-name="Biscuits" data-price="20"><div class="product-info"><strong>Biscuits</strong><span class="product-price">₹20.00</span></div><button type="button" class="add-button">Add</button></div>
+                <div class="product" data-id="7" data-name="Eggs (6 pcs)" data-price="42"><div class="product-info"><strong>Eggs (6 pcs)</strong><span class="product-price">₹42.00</span></div><button type="button" class="add-button">Add</button></div>
+                <div class="product" data-id="8" data-name="Soap" data-price="35"><div class="product-info"><strong>Soap</strong><span class="product-price">₹35.00</span></div><button type="button" class="add-button">Add</button></div>
+            </div>
+        </section>
+        <section class="panel">
+            <h2>🧾 Customer Bill</h2>
+            <label for="customer">Customer Name</label>
+            <input type="text" id="customer" placeholder="Enter customer name">
+            <div id="cart"><p>No products added yet.</p></div>
+            <div class="total">
+                <div>Subtotal: ₹<span id="subtotal">0.00</span></div>
+                <div>GST (5%): ₹<span id="gst">0.00</span></div>
+                <div class="grand-total">Total: ₹<span id="total">0.00</span></div>
+            </div>
+            <div class="payment-section">
+                <label for="payment">Payment Method</label>
+                <select id="payment"><option value="Cash">Cash</option><option value="UPI">UPI</option><option value="Card">Card</option></select>
+            </div>
+            <div class="actions">
+                <button type="button" id="generate-bill">Generate Bill</button>
+                <button type="button" id="clear-cart" class="clear">Clear</button>
+            </div>
+            <p id="message" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Rubiyan Hypermarket | Billing System</p>
+        <p class="project-credit-footer">Minor Project - Last Internship | Done by Hana Fathima Haris | Reg No: 03SU25RD017</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
